@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+#main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+#movie-details {
+    width: 60%;
+    padding-right: 20px;
+}
+
+#movie-title {
+    font-size: 24px;
+    margin: 0;
+    color: #2c3e50;
+}
+
+#movie-poster {
+    width: 100%;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+#movie-runtime,
+#movie-showtime,
+#available-tickets {
+    margin: 5px 0;
+    color: #555;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.sold-out {
+    color: red;
+    font-weight: bold;
+}
+
+#films {
+    list-style-type: none;
+    padding: 0;
+    width: 30%;
+}
+
+.film.item {
+    background-color: #ecf0f1;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.film.item:hover {
+    background-color: #bdc3c7;
+}
+
+.sold-out.film.item {
+    opacity: 0.6;
+}
